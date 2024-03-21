@@ -12,19 +12,19 @@ This Bash script automates the installation process of VMware Tools on Arch Linu
 1. Clone this repository or download the script directly:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/jimididit/arch-vmwaretools-install.git
     ```
 
 2. Make the script executable:
 
     ```bash
-    chmod +x vmware_tools_installer.sh
+    chmod +x arch_vmwaretools_install.sh
     ```
 
 3. Run the script as root:
 
     ```bash
-    sudo ./vmware_tools_installer.sh
+    sudo ./arch_vmwaretools_install.sh
     ```
 
 ## Usage
