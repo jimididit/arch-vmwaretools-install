@@ -12,7 +12,7 @@ pacman -Syu --noconfirm
 pacman -S base-devel net-tools linux-headers --noconfirm
 
 # Prompt user to install VMWareTools via VMWare Tab...
-read -p "Is VMWare Tools installed Before Mounting CDRom By Going To 'VM > Install VMWare Tools'? (y/n) " answer
+read -p "NOTE: VMWare Tools needs to be installed before mounting CDRom! Go To 'VM > Install VMWare Tools'. Are VMWare Tools Installed? (y/n) " answer
 
 case $answer in
 	[Yy]* )
