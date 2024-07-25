@@ -15,6 +15,10 @@ This Bash script automates the installation process of VMware Tools on Arch Linu
     git clone https://github.com/jimididit/arch-vmwaretools-install.git
     ```
 
+     ```bash
+    cd arch-vmwaretools-install
+    ```
+
 2. Make the script executable:
 
     ```bash
