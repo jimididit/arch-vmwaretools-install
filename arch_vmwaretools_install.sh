@@ -17,12 +17,15 @@ read -p "NOTE: VMWare Tools needs to be installed before mounting CDRom! Go To '
 case $answer in
 	[Yy]* )
 		echo "VMWareTools is already installed. Proceeding..."
+  		;;
 	[Nn]* )
 		echo "Please first install VMWare Tools By Going To 'VM > Install VMWare Tools'. Exiting Script."
-		exit 0;;
+		exit 0
+  		;;
 	* )
 		echo "Invalid Input. Please answer y or n."
-		exit 1;;
+		exit 1
+  		;;
 esac
 
 # Creat bogus init directories for the installer
@@ -40,7 +43,7 @@ mount /dev/cdrom /mnt
 
 # Extract VMware-Tools
 echo "Extracting VMware-Tools..."
-tar xf VMware-Tools*.tar.gz -C /root
+tar xf /mnt/VMware-Tools*.tar.gz -C /root
 
 # Uninstall the last version of vmware-tools by running the uninstall perl script
 echo "Running vmware-uninstall script to remove any previous versions..."
